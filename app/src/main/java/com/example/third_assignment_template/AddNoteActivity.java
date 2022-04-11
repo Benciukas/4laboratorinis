@@ -29,10 +29,8 @@ public class AddNoteActivity extends AppCompatActivity {
         Set<String> newStrSet = new HashSet<String>();
         newStrSet.add(txtNote.getText().toString());
         newStrSet.addAll(oldSet);
-
         spEd.putStringSet("notes",newStrSet);
         spEd.apply();
-
         finish();
     }
 }

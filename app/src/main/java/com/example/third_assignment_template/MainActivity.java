@@ -58,7 +58,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(addActivityIntent);
                 return true;
             case R.id.delete_note_activity:
-                return true;
+                Intent deleteActivityIntent = new Intent(getApplicationContext(), com.example.third_assignment_template.DeleteNoteActivity.class);
+                startActivity(deleteActivityIntent);
             default:
                 return super.onOptionsItemSelected(item);
         }
